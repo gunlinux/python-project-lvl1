@@ -2,3 +2,4 @@
 [![Actions Status](https://github.com/gunlinux/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/gunlinux/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Python CI](https://github.com/gunlinux/python-project-lvl1/actions/workflows/main.yml/badge.svg)](https://github.com/gunlinux/python-project-lvl1/actions/workflows/main.yml)
+[![asciicast](https://asciinema.org/a/ubc6AXpYa2fwpWTQEa4YHYZUL.svg)](https://asciinema.org/a/ubc6AXpYa2fwpWTQEa4YHYZUL)
