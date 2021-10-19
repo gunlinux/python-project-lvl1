@@ -5,6 +5,8 @@ from .. import NUMBER_COUNT, NUMBER_MIN, NUMBER_MAX, welcome_user, \
 
 def calc_exp():
     x = random.randint(NUMBER_MIN, NUMBER_MAX)
+    if x == 1:
+        return ('1', 'yes')
     for i in range(2, x - 1):
         if not x % i:
             return ('{}'.format(x), 'no')
