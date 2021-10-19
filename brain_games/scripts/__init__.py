@@ -2,7 +2,7 @@ import prompt
 
 
 NUMBER_MIN = 1
-NUMBER_MAX = 5
+NUMBER_MAX = 100
 NUMBER_COUNT = 3
 
 
