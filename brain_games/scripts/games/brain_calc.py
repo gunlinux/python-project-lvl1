@@ -13,6 +13,7 @@ def welcome_user():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     return name
 
+
 def calc_exp():
     exp_list = ['*', '-', '+']
     number_one = random.randint(NUMBER_MIN, NUMBER_MAX)
@@ -38,12 +39,12 @@ def main():
         print('Question: {}'.format(question))
         answer = prompt.string('Your answer: ')
 
-        correct = rez == answer
         # refactor
         if (answer == rez):
             print('Correct!')
         else:
-            print("'{}' is wrong answer ;(. Correct answer was '{}'.".format(answer, rez))
+            print("'{}' is wrong answer ;(. Correct answer was '{}'.".format(
+                answer, rez))
             print("Let's try again, {}!".format(name))
             return False
     print('Congratulations, {}!'.format(name))
