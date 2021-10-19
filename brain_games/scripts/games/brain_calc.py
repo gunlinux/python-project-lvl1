@@ -1,17 +1,6 @@
-import prompt
 import random
-
-NUMBER_COUNT = 3
-NUMBER_MIN = 1
-NUMBER_MAX = 5
-
-
-def welcome_user():
-    print('\nWelcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    return name
+from .. import NUMBER_COUNT, NUMBER_MIN, NUMBER_MAX, welcome_user, \
+    endgame
 
 
 def calc_exp():
@@ -35,20 +24,9 @@ def main():
     print('What is the result of the expression?')
     for i in range(NUMBER_COUNT):
         question, rez = calc_exp()
-        # refactor
-        print('Question: {}'.format(question))
-        answer = prompt.string('Your answer: ')
-
-        # refactor
-        if (answer == rez):
-            print('Correct!')
-        else:
-            print("'{}' is wrong answer ;(. Correct answer was '{}'.".format(
-                answer, rez))
-            print("Let's try again, {}!".format(name))
+        if not endgame(question, rez, name):
             return False
     print('Congratulations, {}!'.format(name))
-    return True
 
 
 if __name__ == '__main__':
